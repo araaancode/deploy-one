@@ -1,15 +1,35 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "*.js",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
-    ]
+  "name": "my-mern-app",
+  "version": 2,
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    },
+    {
+      "src": "backend/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "backend/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "frontend/build/$1"
+    }
+  ],
+  "env": {
+    "JWT_SECRET"="65456456fdasdhaksdjghaksjdgjkas645"
+    "JWT_EXPIRES_IN"="30d"
+    "JWT_COOKIE_EXPIRES_IN"=30
+    "MONGO_URI"="mongodb+srv://araaancode:2fcmKqD47IJ8q2Q1@kome.sutbc0i.mongodb.net/"
+    "UNSPLASH_API_KEY"="tqMsEOfDWYkmAJBdiJ66SLHP7-jwTwYyHdB1PY94kak"
+    "NODE_ENV="production"
+  }
 }
