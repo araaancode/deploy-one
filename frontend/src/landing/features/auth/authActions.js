@@ -1,10 +1,7 @@
 import axios from 'axios'
 import { createAsyncThunk } from '@reduxjs/toolkit'
 
-const backendURL =
-  process.env.NODE_ENV !== 'production'
-    ? 'http://localhost:5000'
-    : import.meta.env.VITE_SERVER_URL
+const backendURL = "https://deploy-one-backend.onrender.com/"
 
 export const userLogin = createAsyncThunk(
   'auth/login',
