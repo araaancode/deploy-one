@@ -65,14 +65,14 @@ const PhotoSlider = ({ houses }) => {
                 <div className="buttons ">
                     <button
                         onClick={prevSlide}
-                        className="btn mr-2 w-10 h-10 bg-white p-2 border border-gray-300 rounded-full"
+                        className="btn mr-2 w-10 h-10 bg-white p-2 border border-gray-300 rounded-xl"
                         disabled={currentIndex === 0}
                     >
                         <ArrowRightIcon />
                     </button>
                     <button
                         onClick={nextSlide}
-                        className="btn mr-2 w-10 h-10 bg-white p-2 border border-gray-300 rounded-full"
+                        className="btn mr-2 w-10 h-10 bg-white p-2 border border-gray-300 rounded-xl"
                         disabled={currentIndex >= images.length - imagesPerPage}
                     >
                         <ArrowLeftIcon />
