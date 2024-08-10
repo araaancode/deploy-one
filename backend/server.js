@@ -50,7 +50,7 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cors({
   credentials: true,
   origin: 'https://deploy-two-frontend.vercel.app',
-  methods: ['POST', 'GET']
+  methods: ['POST', 'GET','PUT','DELETE','PATCH']
 }));
 
 
