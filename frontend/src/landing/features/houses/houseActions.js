@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { createAsyncThunk } from '@reduxjs/toolkit'
 
-const backendURL = "https://deploy-one-backend.onrender.com/"
+const backendURL = "https://deploy-one-backend.onrender.com"
 
 export const searchHouses = createAsyncThunk(
   'auth/login',
