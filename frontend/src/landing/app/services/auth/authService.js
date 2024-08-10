@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
-const baseUrl = "https://deploy-one-backend.onrender.com/"
+const baseUrl = "https://deploy-one-backend.onrender.com"
 
 export const authApi = createApi({
   reducerPath: 'authApi',
