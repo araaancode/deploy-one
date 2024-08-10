@@ -96,7 +96,7 @@ const Card = ({ images, house }) => {
 
                 <button
                     onClick={handlePrevious}
-                    className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-100 bg-white mx-2 p-1 rounded-full focus:outline-none"
+                    className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-100 bg-white mx-2 p-1 rounded-full focus:outline-none"
                 >
                     <RiArrowLeftSLine className='font-bold shadow' />
                 </button>
